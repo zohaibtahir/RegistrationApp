@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="6"
+    android:gravity="center"
+    android:background="#FFFFFF"
+    tools:context=".Welcome">
+
+    <ImageView
+        android:id="@+id/profile_img_box"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:srcCompat="@mipmap/ic_launcher"
+        android:visibility="gone"/>
+    <EditText
+        android:id="@+id/image_name_txt"
+        android:layout_weight=".5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:hint="Image Name"
+        android:visibility="gone"/>
+    <Button
+        android:id="@+id/choose_img_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight=".5"
+        android:text="Choose Image"/>
+    <Button
+        android:id="@+id/upload_btn"
+        android:layout_weight=".5"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:text="Done"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/get_name_txt"
+        android:layout_weight=".5"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:hint="Name"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#000"/>
+    <TextView
+        android:id="@+id/get_email_txt"
+        android:layout_weight=".5"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:hint="Email"
+        android:textSize="15sp"
+        android:textStyle="bold"/>
+
+</LinearLayout>

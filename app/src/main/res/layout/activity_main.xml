@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="5"
+    android:gravity="center"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_weight=".5"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:text="TALK TO ME"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="#F44336"
+        android:layout_margin="80dp"/>
+    <EditText
+        android:id="@+id/user_name_txt"
+        android:layout_weight=".6"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:hint="User Name"/>
+    <EditText
+        android:id="@+id/password_txt"
+        android:layout_weight=".6"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:hint="Password"
+        android:inputType="textPassword"/>
+    <Button
+        android:id="@+id/login_btn"
+        android:layout_weight=".5"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:text="Login"
+        android:paddingLeft="60dp"
+        android:paddingRight="60dp"
+        android:background="#F44336"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="20dp"/>
+    <TextView
+        android:id="@+id/register_txt"
+        android:layout_weight="2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:text="Not have an account? Register Now"
+        android:textSize="16sp"
+        android:textColor="#F44336"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:paddingTop="50dp"/>
+
+</LinearLayout>
